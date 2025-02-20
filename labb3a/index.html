@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <title>Uppgift 3a</title>
+</head>
+
+<body>
+  <header>
+    <h1>Uppgift 3a</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Random javascript array</h2>
+      <p id="output"></p>
+      <p id="output-sorted"></p>
+    </section>
+    <section>
+      <h2>Formulär med js validering</h2>
+      <form id="formjs" action="register.html" method="post">
+        <label for="username">Namn</label>
+        <input type="text" id="username" autocomplete="username">
+        <label for="email">E-post</label>
+        <input type="text" id="email" autocomplete="email">
+        <label for="password">Lösenord</label>
+        <input type="password" id="password" autocomplete="new-password">
+        <label for="password2">Bekräfta lösenord</label>
+        <input type="password" id="password2" autocomplete="new-password">
+        <div class="form-group">
+          <label for="policy">Jag godkänner <a id="policy-link" class="link">sidans policy</a></label>
+          <input type="checkbox" id="policy" name="policy">
+        </div>
+        <button type="submit" class="button">Registrera</button>
+      </form>
+    </section>
+    <section>
+      <h2>Formulär med html5 validering</h2>
+      <form id="formhtml5" action="register.html" method="post">
+        <label for="username">Namn</label>
+        <input type="text" name="username" id="username2" pattern="[a-zA-Z0-9åäöÅÄÖ]{3,}"
+          title="Namn måste vara minst 3 tecken långt och kan innehålla bokstäver och siffror" autocomplete="username"
+          required>
+        <label for="email">E-post</label>
+        <input type="email" name="email" autocomplete="email" required>
+        <label for="password">Lösenord</label>
+        <input type="password" name="password" pattern=".{8,}" title="Lösenord måste vara minst 8 tecken långt" required
+          autocomplete="new-password">
+        <div class="form-group">
+          <label for="policy">Jag godkänner <a id="policy-link2" class="link">sidans policy</a></label>
+          <input type="checkbox" name="policy" required>
+        </div>
+        <button type="submit" class="button">Registrera</button>
+      </form>
+
+
+    </section>
+
+    <div id="policy-modal" class="modal">
+      <div class="modal-content">
+        <span id="policy-close" class="close">&times;</span>
+        <h2>Policy</h2>
+        <h4>Cookie-policy</h4>
+
+        <p>Denna webbplats använder en nödvändig cookie för att säkerställa att webbplatsen fungerar korrekt och för att
+          ge
+          dig en bättre användarupplevelse. Genom att fortsätta använda denna webbplats godkänner du användningen av
+          cookies enligt denna policy.</p>
+
+        <h4>Vad är cookies </h4>
+
+        <p>Cookies är små textfiler som lagras på din enhet när du besöker en webbplats. De används för att förbättra
+          webbplatsens funktionalitet och användarupplevelse.</p>
+
+        <h4>Vad för cookies används på denna webbplats?</h4>
+
+        <p>Denna webbplats använder endast en PHP sessionscookie. Denna cookie är strikt nödvändig för att webbplatsen
+          ska
+          kunna identifiera din session när du navigerar mellan olika sidor och för att komma ihåg information som du
+          anger under din session. Cookien sparas tillfälligt på din enhet och tas bort när du stänger din webbläsare.
+        </p>
+
+        <h4>>Hur kan jag hantera cookies?</h4>
+
+        <p>Eftersom vi endast använder en nödvändig cookie för sessionen, kan du inte avvisa denna cookie utan att
+          förlora
+          grundläggande funktionalitet på webbplatsen. Om du inte accepterar cookies kan du välja att stänga av cookies
+          i
+          din webbläsares inställningar, men detta kan påverka din användarupplevelse.</p>
+
+        <h4>Ändringar i cookie-policyn</h4>
+
+        <p>Vi förbehåller oss rätten att uppdatera denna cookie-policy vid behov. Eventuella ändringar kommer att
+          publiceras här med ett uppdaterat datum.</p>
+
+        <h4>Kontaktinformation</h4>
+
+        <p>Om du har några frågor om vår användning av cookies, vänligen kontakta oss.</p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

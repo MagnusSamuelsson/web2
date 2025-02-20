@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Uppgift 1</title>
+</head>
+
+<body>
+    <header>
+        <h1>Uppgift 1</h1>
+        <nav>
+            <ul>
+                <li><a href="sida1.php">Sida 1</a></li>
+                <li><a href="sida2.php">Sida 2</a></li>
+                <li><a href="sida3.php">Sida 3</a></li>
+                <li><a href="sida4.php">Sida 4</a></li>
+                <li><a href="sida5.php">Sida 5</a></li>
+                <li><a href="sida6.html" class="active">Sida 6</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="sida6">
+            <h1>Sida 6</h1>
+            <p>Den här sidan innehåller två olika formulär som gör samma sak, dvs skickar data till en php sida som
+                bearbetar och skriver ut datan.</p>
+            <h2>Get Formulär:</h2>
+            <form action="sida6.php" method="get">
+                <label for="name">Namn:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="phone">Telefonnummer:</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                <input type="submit" value="Skicka">
+            </form>
+
+            <h2>Post Formulär</h2>
+            <form action="sida6.php" method="post">
+                <label for="name2">Namn:</label><br>
+                <input type="text" id="name2" name="name" required><br><br>
+                <label for="phone2">Telefonnummer:</label><br>
+                <input type="tel" id="phone2" name="phone" required><br><br>
+                <input type="submit" value="Skicka">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Luleå tekniska universitet | Webbutveckling II - Skriptspråk och databaser | magsam-9 | 2025</p>
+    </footer>
+</body>
+
+</html>
