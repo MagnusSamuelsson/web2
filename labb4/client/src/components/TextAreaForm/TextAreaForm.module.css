@@ -1,0 +1,206 @@
+.textarea {
+    width: 100%;
+    padding: 0.7em;
+    resize: none;
+    border: none;
+    background-color: transparent;
+    color: var(--font-color);
+    font-size: 1em;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.textAreaContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0.5em;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.submitButton {
+    background-color: transparent;
+    color: var(--font-color);
+    border: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+.submitButton:hover {
+    cursor: pointer;
+}
+
+.submitButton:focus {
+    outline: none;
+}
+
+.submitButton:focus path {
+    stroke-width: 3;
+}
+
+.submit {
+    background-color: transparent;
+    color: var(--font-color);
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    width: 2em;
+    height: 1.5em;
+}
+
+.submit:hover path {
+    stroke-width: 3;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 0.7em;
+    border-radius: 20px;
+    margin-bottom: 0.5em;
+    width: 100%;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+.form:focus-within {
+    border: 2px solid var(--border-color);
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    width: min-content;
+    flex-direction: column;
+    gap: 0.2em;
+    margin-top: 0.5em;
+
+}
+
+.imageUploaderContainer {
+    overflow-x: auto;
+    scrollbar-width: none;
+    border-radius: 20px;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+    text-wrap: nowrap;
+
+
+}
+
+.imageTnWrapper {
+    display: inline-block;
+    border-radius: 20px;
+    margin-left: -3em;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.2s ease, z-index 0.2s ease;
+    transform: translateX(-20px);
+}
+
+.imageUploadTn {
+    width: 100%;
+    max-width: 150px;
+    margin: 0;
+    padding: 0;
+    min-width: 100px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px var(--border-color);
+}
+
+.imageUploaderWrapper {
+    display: inline-grid;
+}
+
+.imageUploaderContainer :first-child {
+    margin-left: 0;
+}
+
+.imageTnWrapper:hover {
+    z-index: 3;
+    transform: scale(1.05);
+}
+
+.imageTnWrapper:hover+.imageTnWrapper {
+    z-index: 2;
+}
+
+.deleteButton {
+    position: absolute;
+    top: 0.2em;
+    right: 0.2em;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 1em;
+    cursor: pointer;
+    z-index: 20;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.deleteButton:hover {
+    background: darkred;
+}
+
+
+.cropWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    padding-top: 3em;
+    margin: 2em;
+    border-radius: 1em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 200;
+    background-color: var(--modal-color-transparent);
+
+}
+
+.cropContainer {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.cropButton {
+    all: unset;
+    border: none;
+    cursor: pointer;
+}
+
+.cropButton svg {
+    width: 2em;
+    height: 2em;
+    fill: var(--font-color);
+    stroke: var(--font-color);
+}
+
+.cropButton:hover svg {
+    fill: var(--font-color-hover);
+    stroke: var(--font-color-hover);
+}

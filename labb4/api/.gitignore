@@ -1,0 +1,40 @@
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,laravel
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,laravel
+
+### PHP ###
+/vendor/
+node_modules/
+npm-debug.log
+yarn-error.log
+
+.env
+
+
+### VisualStudioCode ###
+.vscode/*
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+public/profileimages/*
+!public/profileimages/default/
+public/postimages/*
+public/commentimages/*
+
+.htaccess
+
+http.http

@@ -1,0 +1,58 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: var(--background-color);
+  color: var(--font-color);
+}
+
+.button {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.switchText {
+  text-align: center;
+  margin-top: 10px;
+  color: var(--font-color);
+}
+
+.switchLink {
+  all: unset;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #007bff;
+  ;
+}
+
+.switchLink:hover {
+  color: #0056b3;
+}
+.switchLink:focus-visible {
+  outline: 1px solid #0056b3;
+}
+.switchLink:active {
+  transform: translateY(1px);
+}
+
+.errorMessage {
+  color: red;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  position: absolute;
+  top:0;
+}

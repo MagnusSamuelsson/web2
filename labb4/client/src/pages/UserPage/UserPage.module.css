@@ -1,0 +1,72 @@
+.postList {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.profileImage {
+  border-radius: 50%;
+  width: var(--profile-image-size);
+  height: var(--profile-image-size);
+  margin: var(--profile-image-margin);
+}
+
+.container {
+  display: flex;
+  padding: 1em 0;
+}
+
+.rightCol {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  padding: 1em;
+  border-radius: 20px;
+  max-width: 600px;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  max-width: 400px;
+  justify-content: space-evenly;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.description {
+  margin: 1em 0;
+}
+
+.followButton {
+  all:unset;
+  color: var(--text-color);
+  border: none;
+  padding: 0.2em 0.7em;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.usernameHeader {
+  all:unset;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .postList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+  }
+}

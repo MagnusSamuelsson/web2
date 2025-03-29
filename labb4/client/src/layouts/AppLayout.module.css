@@ -1,0 +1,35 @@
+.header {
+    all:unset;
+}
+header {
+    align-items: center;
+    background-color: var(--menu-background-color);
+    border-radius: 2px;
+    box-shadow: 0 -2px 5px rgba(241, 239, 239, 0.1);
+    color: var(--menu-color);
+    display: flex;
+    flex-direction: row-reverse;
+    height: 2em;
+    justify-content: space-between;
+    left:0;
+    margin: 0;
+    padding: 0.5em;
+    position: fixed;
+    right:0;
+    top:0;
+    z-index: 10;
+    height: var(--header-height);
+    padding-right: max(var(--safe-right), 1em);
+    padding-left: max(var(--safe-left), 1em);
+}
+main {
+    padding: calc(var(--safe-top) + var(--header-height)) 0 calc(var(--safe-bottom) + var(--bottom-navbar-height)) 0;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+      margin: 0 auto;
+      border: #ffffff solid 1px;
+      border-radius: 10px;
+    }
+}
