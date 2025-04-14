@@ -1,0 +1,56 @@
+.user {
+    display: flex;
+    margin: 0 0 1em 0;
+    border-bottom: 1px solid #ccc;
+    padding: 1em 1em 1em 0em;
+}
+
+.rightCol {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content {
+    text-align: left;
+    margin: 0 0 1em 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-line;
+}
+
+.topRow {
+    display: flex;
+}
+
+.bottomRow {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+.profileDescription {
+    text-align: left;
+}
+
+.profileImage {
+    border-radius: 50%;
+    width: var(--profile-image-size);
+    height: var(--profile-image-size);
+    margin: var(--profile-image-margin);
+}
+
+.close {
+    all: unset;
+    padding: 0.5em;
+    font-weight: normal;
+    color: white;
+    cursor: pointer;
+}
+
+.close:hover {
+    font-weight: bold;
+}
+
+.close:focus {
+    font-weight: bold;
+}

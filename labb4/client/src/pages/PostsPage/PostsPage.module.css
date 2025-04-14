@@ -1,0 +1,15 @@
+.postList {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .postList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
+  }
+}

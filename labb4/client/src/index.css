@@ -1,0 +1,100 @@
+:root {
+  --font-color-hover: #bcbff5;
+  --font-color: rgba(255, 255, 255, 0.87);
+  --background-color: #242424;
+  --background-color-transparent:#2424246b;
+  --modal-color: #606470;
+  --modal-color-transparent: #606470e3;
+  --border-color: #ccc;
+  --profile-image-size: 4em;
+  --profile-image-margin: 1em 1em 1em 0;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: var(--font-color);
+  background-color: var(--background-color);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --safe-top: env(safe-area-inset-top);
+  --safe-right: env(safe-area-inset-right);
+  --safe-bottom: env(safe-area-inset-bottom);
+  --safe-left: env(safe-area-inset-left);
+
+  --menu-background-color: #213547;
+  --menu-color: rgba(255, 255, 255, 0.87);
+
+  --menu-color-hover: rgba(170, 172, 182, 0.87);
+  --bottom-navbar-height: 2.5em;
+  --header-height: 2em;
+
+}
+a {
+  all:unset;
+  cursor:pointer;
+  color: var(--font-color);
+  font-weight: bold;
+  margin: 1px;
+}
+
+a:hover {
+  color: var(--font-color-hover);
+}
+
+a:focus-visible {
+  outline: 1px solid var(--font-color-hover);
+}
+
+.errorBorder {
+  border: 1px solid red !important;
+}
+.errorBorder:focus-visible {
+  outline: 1px solid red;
+}
+.validBorder {
+  border: 1px solid green !important;
+}
+.validBorder:focus-visible {
+  outline: 1px solid green;
+}
+
+@media screen and (min-width: 768px) {
+  aside {
+    max-width: 450px;
+    margin: 0 auto;
+    border: #ffffff solid 1px;
+    border-radius: 10px;
+    padding: 1em;
+  }
+  body {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --font-color: #213547;
+    --font-color-hover: #264561;
+    --modal-color: #464141;
+    --modal-color-transparent: #78767cd8;
+    color: var(--font-color);
+    --background-color: #ffffff;
+    --background-color-transparent:#FFFFFF6b;
+    background-color: var(--background-color);
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}

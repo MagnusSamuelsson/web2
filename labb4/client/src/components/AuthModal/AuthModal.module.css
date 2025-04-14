@@ -1,0 +1,32 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.content {
+  background: var(--background-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  position: relative;
+}
+
+.closeButton {
+  margin-top: 10px;
+  width: 100%;
+  background: gray;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.errorBorder {
+  border: 1px solid red;
+}

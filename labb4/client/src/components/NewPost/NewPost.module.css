@@ -1,0 +1,22 @@
+
+
+.profileImage {
+    border-radius: 50%;
+    width: var(--profile-image-size);
+    height: var(--profile-image-size);
+    margin: var(--profile-image-margin);
+}
+
+.container {
+    display: flex;
+    padding: 1em 0;
+}
+
+.rightCol {
+    width: 100%;
+}
+
+.topRow {
+    display: flex;
+    justify-content: space-between;
+}

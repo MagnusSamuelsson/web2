@@ -1,0 +1,61 @@
+.commentcomponent {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #ccc;
+    margin-top: 1em;
+}
+.nested {
+    border-top: none;
+
+    margin-top: 0.2em;
+}
+.answers {
+    border-left: 0.2em solid #ccc;
+    margin-left: 0.1em;
+}
+.profileImage {
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left:0;
+}
+
+.comment {
+    display: flex;
+    padding-top: 1em;
+    padding-left: 0.5em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+
+
+.content {
+    flex: 1;
+    white-space: pre-line;
+    text-align: left;
+}
+
+.rightCol {
+    width: 100%;
+}
+
+.topRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottomRow {
+    display: flex;
+    margin-top: 0.5em;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.timestamp {
+    font-size: 0.75em;
+}
